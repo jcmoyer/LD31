@@ -182,6 +182,7 @@ function playstate:draw(a)
   end
   
   love.graphics.setFont(scorefont)
+  love.graphics.setColor(222, 238, 214)
   local scoretext = 'Score: ' .. self.score
   local sw = scorefont:getWidth(scoretext)
 
