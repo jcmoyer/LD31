@@ -42,6 +42,7 @@ function playstate:reset()
   self.map = map.new(FIELDW, FIELDH)
   self.spawners = {}
   self.nextWave = 5
+  self.score = 0
   self.player.x = math.floor(FIELDW / 2) - 1
   self.player.y = math.floor(FIELDH / 1.3)
   self.player.s = 5
