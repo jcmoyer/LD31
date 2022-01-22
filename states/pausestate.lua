@@ -30,10 +30,10 @@ function pausestate:draw()
   local dx = sw / 2 - tw / 2
   local dy = sh / 2 - th / 2
   
-  love.graphics.setColor(68, 36, 52)
+  love.graphics.setColor(68/255, 36/255, 52/255)
   love.graphics.rectangle('fill', dx - 4, dy - 4, tw + 8, th + 8)
   
-  love.graphics.setColor(222, 238, 214)
+  love.graphics.setColor(222/255, 238/255, 214/255)
   love.graphics.print('paused', dx, dy)
   
   return true

@@ -68,10 +68,10 @@ function gameoverstate:draw()
     local dx = love.graphics.getWidth() / 2 - fw / 2
     local dy = love.graphics.getHeight() / 2 - fh / 2
     
-    love.graphics.setColor(68, 36, 52)
+    love.graphics.setColor(68/255, 36/255, 52/255)
     love.graphics.rectangle('fill', unpack(WNDRECT))
     
-    love.graphics.setColor(222, 238, 214)
+    love.graphics.setColor(222/255, 238/255, 214/255)
     love.graphics.print(TEXT, dx, dy)
     
     love.graphics.setFont(subfont)

@@ -18,7 +18,7 @@ local SCREENH = love.graphics.getHeight()
 local FIELDW = SCREENW / TILESIZE
 local FIELDH = SCREENH / TILESIZE
 
-local pickup = love.audio.newSource('assets/pickup.ogg')
+local pickup = love.audio.newSource('assets/pickup.ogg', 'static')
 local scorefont = love.graphics.newFont(16)
 
 function playstate.new()
@@ -130,10 +130,10 @@ function playstate:update(dt)
 end
 
 function playstate:draw(a)
-  love.graphics.setColor(20, 12, 28)
+  love.graphics.setColor(20/255, 12/255, 28/255)
   love.graphics.rectangle('fill', 0, 0, love.graphics.getWidth(), love.graphics.getHeight())
   
-  love.graphics.setColor(255,255,255)
+  love.graphics.setColor(1,1,1)
   
   self.map:draw(TILESIZE)
   
@@ -182,7 +182,7 @@ function playstate:draw(a)
   end
   
   love.graphics.setFont(scorefont)
-  love.graphics.setColor(222, 238, 214)
+  love.graphics.setColor(222/255, 238/255, 214/255)
   local scoretext = 'Score: ' .. self.score
   local sw = scorefont:getWidth(scoretext)
 

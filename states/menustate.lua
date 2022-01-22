@@ -32,12 +32,12 @@ function menustate:keypressed(key)
 end
 
 function menustate:draw()
-  love.graphics.setColor(20, 12, 28)
+  love.graphics.setColor(20/255, 12/255, 28/255)
   love.graphics.rectangle('fill', 0, 0, love.graphics.getWidth(), love.graphics.getHeight())
   
   local title = love.window.getTitle()
   love.graphics.setFont(namefont)
-  love.graphics.setColor(222, 238, 214)
+  love.graphics.setColor(222/255, 238/255, 214/255)
   local tw = namefont:getWidth(title)
   love.graphics.print(title, love.graphics.getWidth() / 2 - tw / 2, love.graphics.getHeight() / 6)
   
@@ -46,7 +46,7 @@ function menustate:draw()
   local spacing = 15
   local lineheight = linefont:getHeight()
   love.graphics.setFont(linefont)
-  love.graphics.setColor(222, 238, 214)
+  love.graphics.setColor(222/255, 238/255, 214/255)
   for i = 1, #lines do
     love.graphics.print(lines[i], basex, basey + (i - 1) * (spacing + lineheight))
   end

@@ -29,10 +29,10 @@ end
 local tile = {}
 tile.__index = tile
 
-local spawn = love.audio.newSource('assets/spawn.ogg')
-local lightexplosion = love.audio.newSource('assets/lightexplosion.ogg')
-local heavyexplosion = love.audio.newSource('assets/heavyexplosion.ogg')
-local tntexplode = love.audio.newSource('assets/tntexplode.ogg')
+local spawn = love.audio.newSource('assets/spawn.ogg', 'static')
+local lightexplosion = love.audio.newSource('assets/lightexplosion.ogg', 'static')
+local heavyexplosion = love.audio.newSource('assets/heavyexplosion.ogg', 'static')
+local tntexplode = love.audio.newSource('assets/tntexplode.ogg', 'static')
 
 local tiles = {
   {

@@ -1,4 +1,4 @@
-package.path = "./lib/?.lua;" .. package.path
+package.path = './lib/?.lua;' .. package.path
 
 local basicgame = require('hug.basicgame')
 local gameloop = require('hug.gameloop')
